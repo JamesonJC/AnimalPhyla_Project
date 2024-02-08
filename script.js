@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Example animal data (replace this with data from your MySQL database)
     const animals = [
         {
-            habitat: "African Savanna",
+            habitat: "Aaaaafrican Savanna",
             habitatDescription: "The African Savanna is home to a variety of animals such as lions, elephants, and zebras.",
             name: "LION",
             description: "The lion is a species in the family Felidae and a member of the genus Panthera.",
