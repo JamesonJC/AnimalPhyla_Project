@@ -7,6 +7,24 @@ h1 {
     text-align: center;
 }
 
+.Register_Button{
+    margin-left: 90%;
+    padding-bottom: 0%;
+}
+
+h2 {
+    text-align: center;
+}
+
+img, video {
+    display: block;
+    margin: 10px auto;
+}
+
+p {
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -16,9 +34,4 @@ li {
     margin-bottom: 30px;
     border: 1px solid #ccc;
     padding: 15px;
-}
-
-img, video {
-    display: block;
-    margin: 10px auto;
 }

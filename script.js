@@ -4,20 +4,44 @@ document.addEventListener("DOMContentLoaded", function () {
     // Example animal data (replace this with data from your MySQL database)
     const animals = [
         {
-            name: "Lion",
+            habitat: "African Savanna",
+            habitatDescription: "The African Savanna is home to a variety of animals such as lions, elephants, and zebras.",
+            name: "LION",
             description: "The lion is a species in the family Felidae and a member of the genus Panthera.",
             image: "lion.jpg",
             video: "lion.mp4",
             link: "https://en.wikipedia.org/wiki/Lion",
         },
-        // Add more animals as needed
+
+        {
+            habitat: "Amazon Rainforest",
+            habitatDescription: "The Amazon Rainforest, the world's largest tropical rainforest, houses numerous species including jaguars, sloths, and macaws.",
+            name: "LION",
+            description: "The lion is a species in the family Felidae and a member of the genus Panthera.",
+            image: "lion.jpg",
+            video: "lion.mp4",
+            link: "https://en.wikipedia.org/wiki/Lion",
+        },
+
+        {
+            habitat: "Arctic Tundra",
+            habitatDescription: "The Arctic Tundra, while harsh and cold, is the habitat for animals like polar bears, arctic foxes, and reindeer.;",
+            name: "LION",
+            description: "The lion is a species in the family Felidae and a member of the genus Panthera.",
+            image: "lion.jpg",
+            video: "lion.mp4",
+            link: "https://en.wikipedia.org/wiki/Lion",
+        },
+        
     ];
 
     animals.forEach((animal) => {
         const listItem = document.createElement("li");
         listItem.innerHTML = `
+            <h1>${animal.habitat}</h1>
+                <p>${animal.habitatDescription}</p>
             <h2>${animal.name}</h2>
-            <p>${animal.description}</p>
+                <p>${animal.description}</p>
             <img src="static/images/${animal.image}" alt="${animal.name} Image" width="300">
             <video width="300" height="200" controls>
                 <source src="static/videos/${animal.video}" type="video/mp4">
