@@ -1,12 +1,26 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background: linear-gradient(to bottom, #78b159, #3b5323); /* Gradient background resembling trees and grass */
 }
 
-h1 {
+h2 {
+    text-align: center;
+    color: #000000; /* Dark green color for headings resembling trees */
+    text-shadow: 0 0 10px #4a7023, 0 0 20px #4a7023, 0 0 30px #4a7023; /* Bubbly effect with dark green color */
+}
+
+.container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+<<<<<<< HEAD:LandingPageStyles.css
 .Register_Button{
     margin-left: 90%;
     padding-bottom: 0%;
@@ -34,4 +48,50 @@ li {
     margin-bottom: 30px;
     border: 1px solid #ccc;
     padding: 15px;
+=======
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 30%; /* Reduced width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;;
+}
+
+p {
+    margin-top: 20px;
+    color: #666;
+}
+
+a {
+    color: #000000;;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+>>>>>>> main:style.css
 }
