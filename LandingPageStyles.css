@@ -19,6 +19,25 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+/* Existing CSS styles */
+
+.social-icons {
+    text-align: center; /* Center align the icons */
+    margin-top: 20px; /* Add margin to separate from the landing page content */
+}
+
+.social-icon {
+    display: inline-block; /* Display icons horizontally */
+    margin-right: 10px; /* Add some spacing between icons */
+}
+
+/* New CSS styles for the footer */
+footer {
+    background-color: transparent; /* Background color for the footer */
+    padding: 20px 0; /* Add padding to the footer */
+}
+
+/* Rest of your existing CSS styles */
 
 .form-group { 
     margin-bottom: 20px; 
