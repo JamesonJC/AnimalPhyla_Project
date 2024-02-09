@@ -20,9 +20,15 @@ h2 {
     text-align: center;
 }
 
-.Register_Button{
-    margin-left: 90%;
-    padding-bottom: 0%;
+.form-group { 
+    margin-bottom: 20px; 
+} 
+label { 
+    display: block; margin-bottom: 5px; color: #000000; 
+} input[type="text"], input[type="password"] { width: 30%; /* Reduced width */ padding: 10px; border: 1px solid #ccc; border-radius: 5px; } button { padding: 10px 20px; background-color: #4CAF50; color: #000000; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; } button:hover { background-color: #000000;; } p { margin-top: 20px; color: #666; } a { color: #000000;; text-decoration: none; } a:hover { text-decoration: underline; }
+
+h1 {
+    text-align: center;
 }
 
 h2 {

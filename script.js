@@ -1,10 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
     const animalList = document.getElementById("animalList");
 
-    // Example animal data (replace this with data from your MySQL database)
+    
+    /*const Navbar = () => {
+        return (
+            <div className = "animalPhyla_navbar">
+                <div className= "animalPhyla_navbarLinks">
+                    <div className="animalPhyla_navbarLinks_logo">
+                        <img src={logo} alt="logo" />
+
+                    </div>
+                    <div>
+                        <p><a href="home"> </a> </p>
+                        <p><a href="conservation_projects"> </a> </p>
+                        <p><a href="contacts"> </a> </p>
+                        <p><a href="aboutUs"> </a> </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        )
+    }*/
     const animals = [
         {
-            habitat: "Aaaaafrican Savanna",
+            habitat: "African Savanna",
             habitatDescription: "The African Savanna is home to a variety of animals such as lions, elephants, and zebras.",
             name: "LION",
             description: "The lion is a species in the family Felidae and a member of the genus Panthera.",
@@ -51,4 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         animalList.appendChild(listItem);
     });
+});
+
+// Get the hamburger menu element
+const hamburger = document.querySelector('.hamburger-menu');
+
+// Get the nav menu element
+const navMenu = document.querySelector('.nav-menu');
+
+// Add an event listener to the hamburger menu element
+hamburger.addEventListener('click', () => {
+  // Toggle the 'show' class to the nav menu element
+  navMenu.classList.toggle('show');
 });
