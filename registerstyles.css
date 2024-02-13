@@ -31,6 +31,29 @@ body {
     background-color: #1a252f;
 }
 
+.background {
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    color: #fff;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #1a252f;
+}
+
+h1 {
+    margin-top: 20px; /* Adjust as needed to make space for the button */
+}
+
 h1 {
     text-align: center;
     color: #ffffff; /* White color for the heading */
