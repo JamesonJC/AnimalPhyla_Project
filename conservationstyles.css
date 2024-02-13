@@ -1,0 +1,145 @@
+/* Applying bold font to all elements */
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Applying glassy effect to all elements */
+.glassy-text {
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.back-button {
+    display: inline-block; /* Change to inline-block to allow for positioning */
+    float: right; /* Align to the right side */
+    margin-top: 20px; /* Adjust the margin as needed */
+    color: #fff;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #fff; /* Add border */
+}
+
+.back-button:hover {
+    background-color: #1a252f;
+}
+
+
+/* Applying bold and glassy effect specifically to h2 elements */
+h2 {
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Applying bold and glassy effect specifically to paragraph elements */
+p {
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Styling for header */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Styling for navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Styling for main content */
+main {
+    padding: 20px;
+}
+
+/* Styling for sections */
+section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Styling for section headings */
+h2 {
+    color: #2c3e50;
+}
+
+/* Styling for paragraph text */
+p {
+    color: #555;
+}
+
+/* Styling for footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styling for file input */
+input[type="file"] {
+    display: none;
+}
+
+
+#seaTurtles {
+    background-image: url('images/sea_turtle.jpg');
+    background-size: cover;
+    color: #fff; /* Change text color for better contrast */
+}
+
+#tigers {
+    background-image: url('images/tiger.jpeg');
+    background-size: cover;
+    color: #FF0000; /* Change text color for better contrast */
+}
+
+#elephants {
+    background-image: url('images/elephant.jpg');
+    background-size: cover;
+    color: #0a0303; /* Change text color for better contrast */
+}
+
+#polarBears {
+    background-image: url('images/polar_bear.jpg');
+    background-size: cover;
+    color: #0a0404; /* Change text color for better contrast */
+}
+
+#rhinoceros {
+    background-image: url('images/rhinoceros.jpg');
+    background-size: cover;
+    color: #0f0606; /* Change text color for better contrast */
+}
+
+#whales {
+    background-image: url('images/whale.jpg');
+    background-size: cover;
+    color: #FF0000; /* Change text color for better contrast */
+}
+
+
