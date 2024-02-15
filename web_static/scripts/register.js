@@ -9,7 +9,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Perform registration logic here (you can send data to the server or use client-side storage)
 
-        alert(`Registration successful for ${username}!`);
-        registerForm.reset();
+        // AJAX used to send registration data to the Flask server
+        fetch('/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                'username': username,
+                'password': password
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+            registerForm.reset();
+        })
+        .catch(error => console.error('Error:', error));
+
+        //alert(`Registration successful for ${username}!`);
+        //registerForm.reset();
     });
 });

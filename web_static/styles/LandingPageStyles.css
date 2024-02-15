@@ -1,3 +1,17 @@
+body {
+    background-image: url('../images/Featured-Five.jpg'); /* Path to your background image */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    /*margin: 20px;
+    background: linear-gradient(to bottom, #78b159, #3b5323);*/ /* Gradient background resembling trees and grass */
+}
+
 .header-container {
     background-color: #333;
     padding: 10px;
@@ -6,12 +20,6 @@
     align-items: center;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background: linear-gradient(to bottom, #78b159, #3b5323); /* Gradient background resembling trees and grass */
-}
 
 h2 {
     text-align: center;
@@ -24,7 +32,6 @@ h2 {
     margin: 100px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
