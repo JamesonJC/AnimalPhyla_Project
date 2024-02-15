@@ -1,28 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const animalList = document.getElementById("animalList");
-
     
-    /*const Navbar = () => {
-        return (
-            <div className = "animalPhyla_navbar">
-                <div className= "animalPhyla_navbarLinks">
-                    <div className="animalPhyla_navbarLinks_logo">
-                        <img src={logo} alt="logo" />
-
-                    </div>
-                    <div>
-                        <p><a href="home"> </a> </p>
-                        <p><a href="conservation_projects"> </a> </p>
-                        <p><a href="contacts"> </a> </p>
-                        <p><a href="aboutUs"> </a> </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        )
-    }*/
     const animals = [
         {
             habitat: "African Savanna",
