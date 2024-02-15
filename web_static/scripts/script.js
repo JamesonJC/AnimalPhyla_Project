@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const animalList = document.getElementById("animalList");
-
     
     const animals = [
         {
