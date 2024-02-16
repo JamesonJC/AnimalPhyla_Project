@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <title>Animal Habitats Information home</title>
+    <script>
+        function showPopup(popupId) {
+            document.getElementById(popupId).style.display = 'flex';
+        }
+
+        function hidePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <!-- Add a div for the logo -->
+        <div class="logo">
+            <a href="#">AnimalPhyla(Kingdom)</a>
+        </div>
+        <!-- Add a div for the side nav menu -->
+        <div class="nav-menu">
+            <a href="{{ url_for('index')}}">Home</a>
+            <a href="{{ url_for('projects')}}">Conservation Projects</a>
+            <a href="{{ url_for('contacts')}}">Contacts</a>
+            <a href="{{ url_for('aboutUs')}}">About Us</a>
+        </div>
+        <!--A div for the hamburger menu-->
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <button onclick="showPopup('signupPopup')">Sign Up</button>
+    <button onclick="showPopup('loginPopup')">Login</button>
+
+    <div>
+        <h1>Welcome to the AnimalPhyla</h1>
+            <p>Here we explore the various habitats that animals around the world call home.</p>
+            <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+                <!-- Add more habitats here -->
+                <ul id="animalList"></ul>
+    </div>
+
+    <!-- Sign Up Popup -->
+    <div id="signupPopup" class="popup-container">
+        <div class="popup-form">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <span onclick="hidePopup('signupPopup')" style="cursor: pointer; position: absolute; top: 10px; right: 10px;">&times;</span>
+            <h2>Sign Up</h2>
+            <form method="post" action="{{ url_for('signup') }}">
+                <!-- Include the sign-up form fields here -->
+                <label for="username">Username:</label>
+                <input type="text" name="username" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" required><br>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" required><br>
+
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+        <script>
+        
+            function closePopup() {
+            window.location.href = '/';
+            }
+
+        </script>
+    </div>
+
+    <!-- Login Popup -->
+    <div id="loginPopup" class="popup-container">
+        <div class="popup-form">
+            <button class="close-popup" onclick="closePopup()">&times;</button>
+            <span onclick="hidePopup('loginPopup')" style="cursor: pointer; position: absolute; top: 10px; right: 10px;">&times;</span>
+            <h2>Login</h2>
+            <form method="post" action="{{ url_for('login') }}">
+                <!-- Include the login form fields here -->
+                <label for="email">Email:</label>
+                <input type="email" name="email" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" required><br>
+
+                <input type="submit" value="Login">
+            </form>            
+        </div>
+        <script>
+            function closePopup() {
+            window.location.href = '/';
+            }
+
+        </script>
+    </div>
+    
+    <!-- Social Media Icons Section -->
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="social-icon">
+                <img src="icons/icons8-facebook-100.png" alt="Facebook">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="icons/icons8-instagram-100.png " alt="Instagram">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="icons/icons8-email-48.png" alt="email">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="'x-social-media-logo-icon (1).png'" alt="x">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
