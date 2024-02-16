@@ -36,17 +36,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     animals.forEach((animal) => {
         const listItem = document.createElement("li");
+        listItem.classList.add("animal-list-items")
         listItem.innerHTML = `
+        <div class="habitat-container">
             <h1>${animal.habitat}</h1>
-                <p>${animal.habitatDescription}</p>
+            <p>${animal.habitatDescription}</p>
+        </div> 
+
+        <div class="animal-container">
             <h2>${animal.name}</h2>
-                <p>${animal.description}</p>
+            <p>${animal.description}</p>
             <img src="static/images/${animal.image}" alt="${animal.name} Image" width="300">
             <video width="300" height="200" controls>
                 <source src="static/videos/${animal.video}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p><a href="${animal.link}" target="_blank">Learn more about ${animal.name}</a></p>
+        </div>
         `;
         animalList.appendChild(listItem);
     });

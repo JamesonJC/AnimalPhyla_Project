@@ -2,10 +2,23 @@
 /* Add your styling here */
 body {
     font-family: Arial, sans-serif;
-    background-color: #8d19da;
-    margin: 0;
-    padding: 0;
-    /*align-items: center;*/
+    background-image: url('../images/dot-and-mom-aziza-2-649f050319cb3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.signup {
+    motion-offset: 0%;
+}
+
+.signin {
+    motion: 0%;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    
 }
 
 h2 {
@@ -14,16 +27,29 @@ h2 {
     text-shadow: 0 0 10px #4a7023, 0 0 20px #4a7023, 0 0 30px #4a7023;
 }
 
-.container {
-    width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+p {
+    text-align: center;
+    color: #000000;
+}
+
+.habitats {
+    background: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    align-self: self-end;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+.habitat-container {
+    background: rgb(240, 234, 234);
+
+}
+
+/*.animal-conatiner {
+
+}*/
 
 .container form {
     margin-top: 20px;
@@ -85,6 +111,8 @@ h2 {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icons {
