@@ -4,7 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Animal Habitats Information</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/contacts.css') }}"> <!-- Add your stylesheet if needed -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Add your stylesheet if needed -->
+    <style>
+        /* Applying bold font to all elements */
+       
+        /* Styling for the back button */
+        .back-button {
+            padding: 10px 20px;
+            border: 2px solid #333; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #49991C;; /* Button background color */
+            color: white; /* Text color */
+            text-decoration: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #49991C; /* Button background color on hover */
+        }
+
+         /* Style the form */
+         form {
+            max-width: 400px;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the form inputs */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #49991C;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #1a252f;
+        }
+    </style>
 </head>
 <body>
     <div class="background">

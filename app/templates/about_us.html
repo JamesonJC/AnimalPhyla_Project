@@ -8,16 +8,26 @@
     <style>
         /* Applying bold font to all elements */
         body {
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: bold;
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
+            font-size: 130%; /* Make the text twice as big */
         }
 
-        /* Applying glassy effect to all elements */
-        .glassy-text {
-            font-weight: bold;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        /* Styling for the back button */
+        .back-button {
+            padding: 10px 20px;
+            border: 2px solid #333; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #49991C;; /* Button background color */
+            color: white; /* Text color */
+            text-decoration: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #49991C; /* Button background color on hover */
         }
     </style>
 </head>
@@ -42,3 +52,4 @@
     <script src="script.js"></script> <!-- Add your script if needed -->
 </body>
 </html>
+

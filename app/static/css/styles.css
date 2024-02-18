@@ -1,10 +1,11 @@
 /* styles.css */
 /* Add your styling here */
 body {
-    font-family: Arial, sans-serif;
+    font-family: bold;
     background-image: url('../images/bear.jpg');
     background-size: cover;
     background-attachment: fixed;
+    font-size: 120%; /* Make the text twice as big */
 }
 
 .buttons-loggons {
@@ -24,19 +25,19 @@ body {
 
 h1 {
     text-align: center;
-    color: #000000;
+    color: #B6F61A;
     
 }
 
 h2 {
     text-align: center;
-    color: #000000;
+    color: #49991C;
     text-shadow: 0 0 10px #4a7023, 0 0 20px #4a7023, 0 0 30px #4a7023;
 }
 
 p {
     text-align: center;
-    color: #000000;
+    color: #5ac91a;
 }
 
 .habitats {
