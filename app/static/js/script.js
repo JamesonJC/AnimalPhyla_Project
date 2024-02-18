@@ -34,9 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
         
     ];
 
-    animals.forEach((animal) => {
+    animals.forEach((animal, index) => {
         const listItem = document.createElement("li");
-        listItem.classList.add("animal-list-items")
+        /*listItem.classList.add("animal-list-items")*/
+        const containerClass = index % 2 === 0 ? "even-container" : "odd-container";
         listItem.innerHTML = `
         <div class="habitat-container">
             <h1>${animal.habitat}</h1>
