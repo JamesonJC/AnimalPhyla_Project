@@ -162,51 +162,34 @@ ul {
     padding: 0;
 }
 
+#animalList {
+    list-style: none;
+}
+
 li {
-    margin-bottom: 30px;
     border: 1px solid #ccc;
+    margin: 10px;
     padding: 15px;
+    text-align: center;
 }
 
-
-/* Container for the horizontal scroll view */
-.video-scroll-container {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-/* Individual video cards within the scroll view */
-.video-card {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-/* Larger size for the middle video */
-.middle-video {
-    transform: scale(1.2); /* Adjust the scale as needed */
-    transition: transform 0.3s ease; /* Smooth transition effect */
-}
-
-/* Horizontal scroll view for media within each container */
 .video-container {
-    display: flex;
     overflow-x: auto;
-    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Style for each video */
-.video {
+.horizontal-scroll {
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px;
+    align-items: center;
+}
+
+.scroll-video {
+    width: 100px;
+    min-width: 200px;
+    height: auto;
     margin-right: 10px;
-}
-
-/* Larger size for the middle video in the container */
-.video.middle-video {
-    transform: scale(1.2); /* Adjust the scale as needed */
-    transition: transform 0.3s ease; /* Smooth transition effect */
-}
-
-/* Remove the margin from the last video card to prevent extra space */
-.video-card:last-child {
-    margin-right: 0;
 }
