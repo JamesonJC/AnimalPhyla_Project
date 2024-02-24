@@ -25,10 +25,10 @@
         </div>
         <!-- Add a div for the side nav menu -->
         <div class="nav-menu">
-            <a href="{{ url_for('index')}}">Home</a>
-            <a href="{{ url_for('projects')}}">Conservation Projects</a>
-            <a href="{{ url_for('contacts')}}">Contacts</a>
-            <a href="{{ url_for('aboutUs')}}">About Us</a>
+            <a href="{{ url_for('index.home')}}">Home</a>
+            <a href="{{ url_for('index.projects')}}">Conservation Projects</a>
+            <a href="{{ url_for('index.contacts')}}">Contacts</a>
+            <a href="{{ url_for('index.aboutUs')}}">About Us</a>
         </div>
         <!--Buttons on the nav bar-->
         <div class="buttons-loggons">
@@ -58,7 +58,7 @@
             <button class="close-popup" onclick="closePopup()">&times;</button>
             <span onclick="hidePopup('signupPopup')" style="cursor: pointer; position: absolute; top: 10px; right: 10px;">&times;</span>
             <h2>Sign Up</h2>
-            <form method="post" action="{{ url_for('signup') }}">
+            <form method="post" action="{{ url_for('index.signup') }}">
                 <!-- Include the sign-up form fields here -->
                 <label for="username">Username:</label>
                 <input type="text" name="username" required><br>
@@ -90,7 +90,7 @@
             <button class="close-popup" onclick="closePopup()">&times;</button>
             <span onclick="hidePopup('loginPopup')" style="cursor: pointer; position: absolute; top: 10px; right: 10px;">&times;</span>
             <h2>Login</h2>
-            <form method="post" action="{{ url_for('login') }}">
+            <form method="post" action="{{ url_for('index.login') }}">
                 <!-- Include the login form fields here -->
                 <label for="email">Email:</label>
                 <input type="email" name="email" required><br>
