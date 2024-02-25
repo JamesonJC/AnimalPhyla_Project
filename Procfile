@@ -1,1 +1,1 @@
-web: python run.py
+web: gunicorn -t 120 run:app
