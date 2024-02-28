@@ -1,20 +1,6 @@
+
+
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "run.py",
-      "use": "@now/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/run.py"
-    }
-  ],
-  "env": {
-    "PORT": "8080"
-  },
   "functions": {
     "api/**/*.py": {
       "runtime": "python3.9"
