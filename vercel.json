@@ -1,8 +1,18 @@
 {
+  "version": 2,
   "builds": [
-    { "src": "run.py", "use": "@now/python" }
+    {
+      "src": "run.py",
+      "use": "@now/python"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/run.py" }
-  ]
+    {
+      "src": "/(.*)",
+      "dest": "/run.py"
+    }
+  ],
+  "env": {
+    "PORT": 8080
+  }
 }
