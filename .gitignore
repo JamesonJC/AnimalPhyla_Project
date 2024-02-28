@@ -6,3 +6,4 @@ venv/
 
 # Ignore database configurations
 db_config.json
+db_connet.py
